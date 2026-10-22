@@ -1,188 +1,199 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>Pesquisa Culturama </title>
-  </head> 
-  <body>
-    <header>
-      <h1>Pesquisa Online </h1>
-    </header>
-    <section>
-      <form action="" method="get">
-       <fieldset>
-            <legend>Dados pessoais</legend>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="culturama-favico.png" type="image/png"> 
+      
+      <link rel="stylesheet" href="css/style.css">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
-            <label for="name">Nome:</label>
-            <input id="name" type="text" name="userName" required>
-            <br>
+      <title>Pesquisa Culturama </title>
+    </head> 
+    <body>
+      <main>
+      <header>
+        <img src="img/logo-culturama.png" alt="Logo Culturama">
+        <h1>Pesquisa Online </h1>
+      </header>
+      <section>
+        <form action="" method="get">
+        <fieldset>
+              <legend>Dados pessoais</legend>
 
-            <label for="age">Idade:</label>
-            <input id="age" type="number" name="userAge" required min="12" max="100">
-            <br>
+              <label for="name">Nome:</label>
+              <input id="name" type="text" name="userName" required>
+              <br>
 
-            <label for="date">Data de nascimento:</label>
-            <input id="date" type="date" name="userBirthDate">
-            <br>
+              <label for="age">Idade:</label>
+              <input id="age" type="number" name="userAge" required min="12" max="100">
+              <br>
 
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="userEmail" required>
-            <br>
+              <label for="date">Data de nascimento:</label>
+              <input id="date" type="date" name="userBirthDate">
+              <br>
 
-            <label for="number">Telefone:</label>
-            <input id="number" type="Tela" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="12123456789">
-            <br>
+              <label for="email">Email:</label>
+              <input id="email" type="email" name="userEmail" required>
+              <br>
 
-            <label for="image">Upload de foto:</label>
-            <input id="image" type="file" accept="image/*" name="userImage">
-            <br>
-          </fieldset>
+              <label for="number">Telefone:</label>
+              <input id="number" type="Tela" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="12123456789">
+              <br>
 
-          <fieldset>
-            <legend>Perfil:</legend>
-            <p>Gênero</p>
-            <input id="gender" type="radio" name="userGender" value="feminino">
-            <label for="gender">Feminino</label>
-            <input type="radio" name="userGender" value="mascuino">
-            <label for="userGender">Masculino</label>
+              <label for="image">Upload de foto:</label>
+              <input id="image" type="file" accept="image/*" name="userImage">
+              <br>
+            </fieldset>
 
-            <input id="gender" type="radio" name="userGender" value="naoinformado">
-            <label for="gender">Prefiro não informar</label>
-            <br>
-            <label for="maritalStatus">Estado civil:</label>
+            <fieldset>
+              <legend>Perfil:</legend>
+              <p>Gênero</p>
+              <input id="gender" type="radio" name="userGender" value="feminino">
+              <label for="gender">Feminino</label>
+              <input type="radio" name="userGender" value="mascuino">
+              <label for="userGender">Masculino</label>
 
-            <select name="marietalStatus">
+              <input id="gender" type="radio" name="userGender" value="naoinformado">
+              <label for="gender">Prefiro não informar</label>
+              <br>
+              <label for="maritalStatus">Estado civil:</label>
 
-              <option value="naoInformado">Selecione</option>
+              <select name="marietalStatus">
 
-              <option value="casado">Casado</option>
-             
-              <option value="solteiro">Solteiro</option>
-            
-              <option value="divorciado">Divorciado</option>
-            
-              <option value="uniaoEstavel">União Estavel</option>
-            
-            </select>
-            <br>
+                <option value="naoInformado">Selecione</option>
 
-            <label for="userState">Estado</label>
-            <select name="userState" required>
-              <option value="acre">Acre</option>
-              <option value="alagoas">Alagoas</option>
-              <option value="amapa">Amapá</option> 
-              <option value="amazonas">Amazonas</option>
-              <option value="bahia">Bahia</option>
-              <option value="ceara">Ceará</option>
-              <option value="distritoFederal">Distrito Federal</option>
-              <option value="espiritoSanto">Espirito Santo</option>
-              <option value="goias">Goiás</option>
-              <option value="maranhao">Maranhão</option>
-              <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
-              <option value="matoGrosso">Mato Grosso</option>
-              <option value="minasGerais">Minas Gerais</option>
-              <option value="para">Pará</option>
-              <option value="paraiba">Paraíba</option>
-              <option value="parana">Paraná</option>
-              <option value="pernambuco">Pernambuco</option>
-              <option value="piaui">Piauí</option>
-              <option value="rioDeJaneiro">Rio de Janeiro</option>
-              <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
-              <option value="rioGrandeDoSul">Rio Grande do Sul</option>
-              <option value="rondonia">Rondônia</option>
-              <option value="roraima">Roraima</option>
-              <option value="santaCatarina">Santa Catarina</option>
-              <option value="saoPaulo">São Paulo</option>
-              <option value="sergipe">Sergipe</option>
-              <option value="tocantins">Tocantins</option>
+                <option value="casado">Casado</option>
+              
+                <option value="solteiro">Solteiro</option>
+              
+                <option value="divorciado">Divorciado</option>
+              
+                <option value="uniaoEstavel">União Estavel</option>
               
               </select>
               <br>
 
-            <label for="usercity">Cidade:</label>
-            <input type="cidade" name="usercity" required>
-            <br>
+              <label for="userState">Estado</label>
+              <select name="userState" required>
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option> 
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distritoFederal">Distrito Federal</option>
+                <option value="espiritoSanto">Espirito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+                <option value="matoGrosso">Mato Grosso</option>
+                <option value="minasGerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="rioDeJaneiro">Rio de Janeiro</option>
+                <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+                <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santaCatarina">Santa Catarina</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+                
+                </select>
+                <br>
 
-            </select>
+              <label for="usercity">Cidade:</label>
+              <input type="cidade" name="usercity" required>
+              <br>
+
+              </select>
+              </fieldset>
+
+            <fieldset>
+              <legend>Hábitos:</legend>
+              <p>Redes Sociais:</p>
+              <input id="facebook" type="checkbox" name="social" value="facebook">
+              <label for="facebook">Facebook</label>
+              <br>
+              <input id="instagram" type="checkbox" name="social" value="instagram">
+              <label for="instagram">Instagram</label>
+              <br>
+              <input id="x" type="checkbox" name="social" value="x">
+              <label for="x">X</label>
+              <br>
+              <input id="linkedin" type="checkbox" name="social" value="linkedin">
+              <label for="linkedin">Linkedin</label>
+              <br>
+
+              <label for="musicalStyle">Estilo musical:</label>
+              <input  id="musicalStyle" name="musicalStyle" type="text" list="styleType">
+              <datelist id="styleType">
+                <option value="Rock">
+                <option value="Pop">
+                <option value="Sertanejo">
+                <option value="Pagode">
+              </datelist> 
+              <br>
+
+              <label for="favoriteColor"> Cor Favorita:</label>
+              <input id="favoriteColor" name="userfavoriteColor" type="color" >
+              <br>
+
             </fieldset>
 
-          <fieldset>
-            <legend>Hábitos:</legend>
-            <p>Redes Sociais:</p>
-            <input id="facebook" type="checkbox" name="social" value="facebook">
-            <label for="facebook">Facebook</label>
-            <br>
-            <input id="instagram" type="checkbox" name="social" value="instagram">
-            <label for="instagram">Instagram</label>
-            <br>
-            <input id="x" type="checkbox" name="social" value="x">
-            <label for="x">X</label>
-            <br>
-            <input id="linkedin" type="checkbox" name="social" value="linkedin">
-            <label for="linkedin">Linkedin</label>
-            <br>
+            <fieldset>
+              <legend>Comentários</legend>
+              <p>O que você acha do nosso serviço?</p>
+              <input id="ratingOtimo" type="radio" name="userRating" value="otimo">
+              <label for="ratingOtimo">Ótimo</label>
+              <br>
 
-            <label for="musicalStyle">Estilo musical:</label>
-            <input  id="musicalStyle" name="musicalStyle" type="text" list="styleType">
-            <datelist id="styleType">
-              <option value="Rock">
-              <option value="Pop">
-              <option value="Sertanejo">
-              <option value="Pagode">
-            </datelist> 
-            <br>
+              <input id="ratingBom" type="radio" name="userRating" value="bom">
+              <label for="ratingBom">Bom</label>
+              <br>
 
-            <label for="favoriteColor"> Cor Favorita:</label>
-            <input id="favoriteColor" name="userfavoriteColor" type="color" >
-            <br>
+              <input id="ratingRegular" type="radio" name="userRating" value="regular">
+              <label for="ratingRegular">Regular</label>
+              <br>
 
-          </fieldset>
+              <input id="ratingRuim" type="radio" name="userRating" value="ruim">
+              <label for="ratingRuim">Ruim</label>
+              <br>
+              
+              <p>Deixe seu comentário:</p>
+              <textarea id="userComment" name="userComment" rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea>
 
-          <fieldset>
-            <legend>Comentários</legend>
-            <p>O que você acha do nosso serviço?</p>
-             <input id="ratingOtimo" type="radio" name="userRating" value="otimo">
-            <label for="ratingOtimo">Ótimo</label>
-            <br>
+            </fieldset>
 
-            <input id="ratingBom" type="radio" name="userRating" value="bom">
-            <label for="ratingBom">Bom</label>
-            <br>
+            <fieldset>
+              <legend>Confirmações</legend>
 
-            <input id="ratingRegular" type="radio" name="userRating" value="regular">
-            <label for="ratingRegular">Regular</label>
-            <br>
+              <input type="checkbox" id="lgpdTerm" name="userLgpd" value="accepted">
+              <label for="lgpdTerm">Eu aceito participar da pesquisa.</label>
+              <br>
 
-            <input id="ratingRuim" type="radio" name="userRating" value="ruim">
-            <label for="ratingRuim">Ruim</label>
-            <br>
-            
-            <p>Deixe seu comentário:</p>
-            <textarea id="userComment" name="userComment" rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea>
+              <input type="checkbox" id="result" name="userResult" value="accepted">
+              <label for="result">Eu desejo receber os resultados da pesquisa por e-mail.</label>
 
-          </fieldset>
-
-          <fieldset>
-            <legend>Confirmações</legend>
-
-            <input type="checkbox" id="lgpdTerm" name="userLgpd" value="accepted">
-            <label for="lgpdTerm">Eu aceito participar da pesquisa.</label>
-            <br>
-
-            <input type="checkbox" id="result" name="userResult" value="accepted">
-            <label for="result">Eu desejo receber os resultados da pesquisa por e-mail.</label>
-
-          </fieldset>
+            </fieldset>
 
 
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
 
 
-      </form>
-    </section>
+        </form>
+      </section>
 
-  </body>
-</html>
+      </main>
+
+    </body>
+  </html>
