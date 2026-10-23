@@ -1,0 +1,132 @@
+/* body {  
+  font-family: "Work S ans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%; 
+  max-width: 700px; 
+  margin: 0 auto;
+}
+
+main {
+    width: 100%; /*largura total da tela*/
+    max-width: 700px; /*largura máxima do conteúdo*/
+    margin: 0 auto; /*margem automática para centralizar o conteúdo*/
+}
+
+header {
+    text-align: center; /*centralizar o conteúdo do header */
+    margin-bottom: 20px; /*margem de 20px abaixo do header */
+}
+
+img {
+    width: 100px; /*largura da imagem*/
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif; /*define a fonte do título h1*/
+}
+
+form {
+    background-color: #FFFFFF; /*cor de fundo do formulário*/
+    padding: 15px; /*espaçamento interno do formulário*/
+    border-radius: 5px; /*arredondamento dos cantos do formulário*/
+    margin-bottom: 20px; /*margem de 20px abaixo do formulário*/
+}
+fieldset {
+    padding: 15px; /*espaçamento interno do fieldset*/
+    border: 1px solid #CCCCCC; /*borda do fieldset*/    
+    border-radius: 5px; /*arredondamento dos cantos do fieldset*/   
+    margin-bottom: 15px; /*margem de 15px abaixo do fieldset*/
+}
+
+legend {
+    font-weight: bold; /*negrito para o texto do legend*/
+    font-size: 18px; /*tamanho da fonte do legend*/
+    padding: 0 5px; /*define espaçamento interno do legend*/
+}   
+
+label {
+    display: inline-block; /*exibe o label como bloco*/
+    margin-bottom: 5px; /*margem de 5px abaixo do label*/
+}
+
+p {
+    margin-bottom: 15px; /*margem de 15px abaixo do parágrafo*/
+    font-weight: bold; /*negrito para o texto do parágrafo*/
+}
+
+input, text, textarea {
+    width: 100%; /*largura total do input, text e textarea*/
+    border: 1px solid #CCCCCC; /*borda do input, text e textarea*/
+    border-radius: 5px; /*arredondamento dos cantos do input, text e textarea*/
+}
+
+textarea {
+   min-height: 100px; /*altura mínima do textarea*/
+
+}
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto; /*largura automática para os inputs do tipo radio e checkbox*/    
+}
+input[type="color"] {
+    width: 50px; /*largura do input do tipo color*/
+    padding: 0  5px; /*remove o espaçamento interno do input do tipo color*/
+}
+
+input:invalid, /*aplica a cor da borda como vermelha para inputs inválidos*/
+select:invalid,
+textarea:invalid {
+    border-color: red; /*define a cor da borda como vermelha para inputs, selects e textareas inválidos*/
+}
+
+input:valid, /*aplica a cor da borda como verde para inputs válidos*/
+select:valid,
+textarea:valid {
+    border-color: green; /*define a cor da borda como verde para inputs, selects e textareas válidos*/
+}
+
+button {
+    width: 100%; 
+    height: 30px; 
+    margin-right: 10px;
+    background-color: white; /*cor de fundo do botão*/
+    border-radius: 5px; /*arredondamento dos cantos do botão*/
+    cursor: pointer; /*define o cursor como pointer ao passar o mouse sobre o botão*/
+}
+
+button:hover {
+    background-color: green; /*cor de fundo do botão ao passar o mouse sobre ele*/
+    color: white; /*cor do texto do botão ao passar o mouse sobre ele*/
+}
+
+button[type="reset"]:hover {
+    background-color: orangered; /*cor de fundo do botão reset*/
+    color: white; /*cor do texto do botão reset*/
+}
+
+h1.pagina-sucesso {
+  color: #111111;       /* Cor preta para sucesso */
+  font-size: 24px;
+  text-align: center;
+}
