@@ -125,8 +125,11 @@ button[type="reset"]:hover {
     color: white; /*cor do texto do botão reset*/
 }
 
-h1.pagina-sucesso {
-  color: #111111;       /* Cor preta para sucesso */
-  font-size: 24px;
-  text-align: center;
+/* Página de sucesso */
+.pagina-sucesso {
+    text-align: center; /*centraliza o conteúdo da página de sucesso*/
+    margin-top: 200px; /*margem de 50px acima do conteúdo da página de sucesso*/
+}
+.pagina-sucesso img {
+    width: 250px; /*largura da imagem da página de sucesso*/
 }
